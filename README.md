@@ -40,7 +40,7 @@ Output 5 = Main Display
 We can transport data between different memory positions by sending it across the bus by linking memory as both input and output.
 ![alt text](https://github.com/Dhubbs/ComputerSimulation/blob/main/Periferals/Screen%20Shot%202022-02-09%20at%207.26.47%20PM.png)
 
-### Dispalys
+### Displays
 I picked two seven segment displays to display values in a base 10 format for the dis on this computer. Because the screens can only display up to the value 99, and all data is 8 bits, and not all values can be conveyed. The input to this module is an 8-bit value, and the output is a base-10 value. This was a fun module to make since I used a rom module with 256 readable addresses and built a lookup table with the first 99 places programmed to output the necessary control signals to switch on the separate segments. Because the rom module is written in raw hex, I created a python script to produce the lookup table of codes, which saved me a lot of time
 ![alt text](https://github.com/Dhubbs/ComputerSimulation/blob/main/Periferals/Screen%20Shot%202022-02-09%20at%207.28.13%20PM.png)
 here is the hex lookup table
